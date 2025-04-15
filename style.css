@@ -1,0 +1,117 @@
+/* ===== Style principal ===== */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  color: #0a0a0a;
+  scroll-behavior: smooth;
+}
+.hero {
+  background: linear-gradient(135deg, #7F00FF, #E100FF);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.typewriter {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  display: inline-block;
+  width: 22ch;
+  margin-bottom: 10px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  z-index: 999;
+}
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #E100FF;
+}
+.btn-primary, .btn-secondary {
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #9B30FF, #E100FF);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(225, 0, 255, 0.5);
+}
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+  font-size: 2.5rem;
+  color: #7F00FF;
+  margin-bottom: 20px;
+}
+ul {
+  padding-left: 20px;
+}
+.competences-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.competences-table th, .competences-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.competences-table th {
+  background: #f3f3f3;
+  color: #333;
+}
+footer {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 80px;
+}
